@@ -1,0 +1,77 @@
+.site-footer {
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+
+    .title {
+        font-size: 20px;
+        line-height: 25px;
+        color: #ffffff;
+        margin-bottom: 14px;
+        // font-weight: bold;
+        // font-family: "D IN2014";
+
+    }
+
+    .contact-info {
+
+        .links{
+            display: flex;
+            align-items: flex-end;
+    
+            .link {
+                all: unset;
+                width: max-content;
+                height: 36px;
+                border-radius: 7px;
+                background-color: #d40434;
+                /* border: 0px solid #000000; */
+                display: flex;
+                padding: 0 9px;
+                align-items: center;
+    
+                margin-right: 2px;
+                font-size: 16px;
+                line-height: 20px;
+                color: #ffffff;
+    
+                cursor: pointer;
+    
+                transition: all .4s ease-in-out;
+    
+                &:hover {
+                    background-color: #c10331;
+                }
+    
+                img {
+                    height: 17px;
+                    width: auto;
+                    margin-right: 11px;
+                }
+            }
+        }
+      
+
+       
+
+    }
+
+    .pdf{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        cursor: pointer;
+
+        .pdf-title{
+            font-size: 13px;
+            line-height: 19px;
+            color: #eff1f2;
+            margin-bottom: 18px;
+        }
+
+        img{
+            width: 33px;
+            height: 33px;
+        }
+    }
+}

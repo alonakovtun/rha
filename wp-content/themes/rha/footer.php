@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,24 +12,57 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'rha' ) ); ?>">
+<footer id="colophon" class="site-footer">
+
+	<div class="contact-info">
+		<p class="title">
+			<?= get_field('footer_title', 'option') ?>
+		</p>
+
+		<div class="links">
+		<?php if (have_rows('contact', 'option')) : ?>
+			<?php while (have_rows('contact', 'option')) : the_row();
+				$image = get_sub_field('icon');
+				$link = get_sub_field('link');
+			?>
+
 				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'rha' ), 'WordPress' );
+
+				if ($link) :
+					$link_url = $link['url'];
+					$link_title = $link['title'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
 				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'rha' ), 'rha', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+					<a class="link" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+						<img src="<?= $image; ?>" alt="">
+						<?php echo esc_html($link_title); ?>
+					</a>
+				<?php endif; ?>
+
+			<?php endwhile; ?>
+		<?php endif; ?>
+		</div>
+		
+
+		<?php $pdf = get_field('pdf', 'option') ?>
+	</div><!-- .contact-info -->
+
+	<?php if ($pdf) : ?>
+		<a class="pdf" href="<?= $pdf['file']['url']; ?>" target="_blank">
+			<span class="pdf-title">
+				<?= $pdf['text']; ?>
+			</span>
+			<img src="<?= $pdf['icon']['url']; ?>" alt="">
+		</a>
+	<?php endif; ?>
+
+
+
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
