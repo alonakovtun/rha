@@ -1,5 +1,20 @@
 .home-page {
     width: 40%;
+    padding: 27px 37px;
+
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .site-branding{
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
 
     .right-content{
 
@@ -8,12 +23,22 @@
         height: calc(100vh - 48px);
         justify-content: space-between;
 
+        @include media-breakpoint-down(md) {
+            padding: 67px 40px;
+            height: auto;
+        }
+
         .title-block{
             // margin-bottom: 62px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 100px;
+            }
 
             .title{
                 font-size: 20px;
                 font-weight: bold;
+
+                
             }
     
             .subtitle{
@@ -105,6 +130,9 @@
                         color: #343232;
                         font-weight: 800;
 
+                        @include media-breakpoint-down(md) {
+                            color: #d40434;
+                        }
                        
                     }
 
@@ -136,8 +164,24 @@
         height: calc(100vh - 48px);
         filter: drop-shadow(7.728px 17.357px 19px rgba(0, 0, 0, 0.52));
 
+        @include media-breakpoint-down(md) {
+            position: initial;
+            height: 500px;
+            width: auto;
+        }
+
         .image{
             object-fit: contain;
+            @include media-breakpoint-down(md) {
+                object-fit: cover;
+                object-position: left;
+            }
+        }
+    }
+
+    .site-footer{
+        @include media-breakpoint-down(md) {
+            margin-top: 100px;
         }
     }
 }

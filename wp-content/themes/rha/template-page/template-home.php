@@ -53,7 +53,7 @@ get_header();
                             $link_title = $link['title'];
                             $link_target = $link['target'] ? $link['target'] : '_self';
 
-                            $url = get_sub_field('incoming') ? '#' : $link_url;
+                            $url = get_sub_field('incoming') ? '#incoming' : $link_url;
 
                         ?>
                         
