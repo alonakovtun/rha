@@ -24,7 +24,6 @@ body {
 }
 
 #page {
-    position: relative;
     min-height: 100%;
 }
 
@@ -46,6 +45,7 @@ body {
     font-style: normal;
     font-weight: 200;
     padding: 27px 37px;
+    position: relative;
 
    
 }

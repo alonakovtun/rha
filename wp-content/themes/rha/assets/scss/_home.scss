@@ -1,3 +1,137 @@
-.home-page{
-    // min-height: calc(100vh - 57px);
+.home-page {
+    width: 40%;
+
+    .right-content{
+
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 74px);
+        justify-content: space-between;
+
+        .title-block{
+            margin-bottom: 62px;
+
+            .title{
+                font-size: 20px;
+                font-weight: bold;
+            }
+    
+            .subtitle{
+                font-size: 16px;
+            }
+        }
+
+        .chapters-block {
+            .title{
+                font-size: 20px;
+                line-height: 25px;
+                color: #ffffff;
+                margin-bottom: 18px;
+            }
+
+            .chapters{
+                display: flex;
+                flex-direction: column;
+
+                max-height: 303px;
+                overflow-y: auto;
+
+                // &::-webkit-scrollbar,
+                // &::-webkit-scrollbar-thumb,
+                // &::-webkit-scrollbar-track { 
+                //     width: 6px;
+                //     border: none;
+                //     background: transparent;
+                // }
+
+                // &::-webkit-scrollbar-button,
+                // &::-webkit-scrollbar-track-piece,
+                // &::-webkit-scrollbar-corner,
+                // &::-webkit-resizer {
+                //     display: none;
+                // }
+
+                // &::-webkit-scrollbar-thumb {
+                //     border-radius: 6px;
+                //     background-color: #fff;
+                // }
+
+                // &::-webkit-scrollbar-track {
+                //     background-image: url("/wp-content/themes/rha/assets/img/scroll-line.png");
+                //     background-repeat: repeat-y;
+                //     background-size: contain;
+                // }
+
+
+                &::-webkit-scrollbar {
+                    width: 7px; //Needed scrollbar thumb width to be 7px, so had to define whole scrollbar to be 7px wide.
+                  };
+                  
+                  &::-webkit-scrollbar-thumb {
+                    background: #fff;
+                    border-radius: 3px;
+                  };
+                  
+                  &::-webkit-scrollbar-track {
+                    background: #292828;
+                    border-left: 3px solid transparent;
+                    border-right: 3px solid transparent;
+                    background-clip: padding-box;
+                  };
+
+                .link{
+                    width: auto;
+                    min-height: 69px;
+                    height: 69px;
+                    border-radius: 7px;
+                    background-color: #eff1f2;
+                    border: 0px solid #eff1f2;
+                    padding-left: 25px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    margin-bottom: 9px;
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+
+                    .chapter-title{
+                        font-size: 29px;
+                        line-height: 25px;
+                        color: #343232;
+                        font-weight: 800;
+                    }
+
+                    .chapter-subtitle{
+                        font-size: 14px;
+                        line-height: 25px;
+                        color: #343232;
+                        margin-top: 6px;
+                    }
+
+                    
+                }
+            }
+        }
+       
+    }
+
+   
+
+    .main-image {
+        position: absolute;
+        top: 21px;
+        width: 55%;
+        right: 27px;
+        height: calc(100vh - 48px);
+        filter: drop-shadow(7.728px 17.357px 19px rgba(0, 0, 0, 0.52));
+
+        .image{
+            object-fit: contain;
+        }
+    }
 }
