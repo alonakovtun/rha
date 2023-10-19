@@ -3,14 +3,13 @@
 
     .right-content{
 
-        padding-top: 80px;
         display: flex;
         flex-direction: column;
-        height: calc(100vh - 74px);
+        height: calc(100vh - 48px);
         justify-content: space-between;
 
         .title-block{
-            margin-bottom: 62px;
+            // margin-bottom: 62px;
 
             .title{
                 font-size: 20px;
@@ -65,18 +64,19 @@
 
 
                 &::-webkit-scrollbar {
-                    width: 7px; //Needed scrollbar thumb width to be 7px, so had to define whole scrollbar to be 7px wide.
+                    width: 13px; //Needed scrollbar thumb width to be 7px, so had to define whole scrollbar to be 7px wide.
                   };
                   
                   &::-webkit-scrollbar-thumb {
                     background: #fff;
                     border-radius: 3px;
+                    border: 4px solid #343233;
                   };
                   
                   &::-webkit-scrollbar-track {
                     background: #292828;
-                    border-left: 3px solid transparent;
-                    border-right: 3px solid transparent;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
                     background-clip: padding-box;
                   };
 

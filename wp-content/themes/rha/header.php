@@ -26,7 +26,7 @@
 	
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<!-- <div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -39,7 +39,8 @@
 				<?php
 			endif; ?>
 			
-		</div><!-- .site-branding -->
+		</div> -->
+		<!-- .site-branding -->
 
 	
 	</header><!-- #masthead -->

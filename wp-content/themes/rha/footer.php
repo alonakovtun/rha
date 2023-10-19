@@ -14,7 +14,7 @@
 
 <footer id="colophon" class="site-footer">
 
-	<div class="contact-info">
+	<!-- <div class="contact-info">
 		<p class="title">
 			<?= get_field('footer_title', 'option') ?>
 		</p>
@@ -45,16 +45,17 @@
 		
 
 		<?php $pdf = get_field('pdf', 'option') ?>
-	</div><!-- .contact-info -->
+	</div> -->
+	<!-- .contact-info -->
 
-	<?php if ($pdf) : ?>
+	<!-- <?php if ($pdf) : ?>
 		<a class="pdf" href="<?= $pdf['file']['url']; ?>" target="_blank">
 			<span class="pdf-title">
 				<?= $pdf['text']; ?>
 			</span>
 			<img src="<?= $pdf['icon']['url']; ?>" alt="">
 		</a>
-	<?php endif; ?>
+	<?php endif; ?> -->
 
 
 
