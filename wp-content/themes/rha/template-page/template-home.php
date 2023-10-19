@@ -52,10 +52,21 @@ get_header();
                             $link_url = $link['url'];
                             $link_title = $link['title'];
                             $link_target = $link['target'] ? $link['target'] : '_self';
+
+                            $url = get_sub_field('incoming') ? '#' : $link_url;
+
                         ?>
-                            <a class="link" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>">
+                        
+                            <a class="link" href="<?php echo esc_url($url); ?>" target="<?php echo esc_attr($link_target); ?>">
                                 <span class="chapter-title"><?php echo esc_html($link_title); ?>:</span>
-                                <span class="chapter-subtitle"><?= get_sub_field('subtitle'); ?></span>
+                                
+                                <?php 
+                                if(get_sub_field('incoming')): ?>
+                                    <span class="chapter-subtitle incoming"><?= get_sub_field('subtitle'); ?></span>
+                                <?php else: ?>
+                                    <span class="chapter-subtitle"><?= get_sub_field('subtitle'); ?></span>
+                                <?php endif; ?>
+                               
 
                             </a>
                         <?php endif; ?>

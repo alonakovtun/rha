@@ -104,6 +104,8 @@
                         line-height: 25px;
                         color: #343232;
                         font-weight: 800;
+
+                       
                     }
 
                     .chapter-subtitle{
@@ -111,6 +113,10 @@
                         line-height: 25px;
                         color: #343232;
                         margin-top: 6px;
+
+                        &.incoming{
+                            color: #8c8989;
+                        }
                     }
 
                     
