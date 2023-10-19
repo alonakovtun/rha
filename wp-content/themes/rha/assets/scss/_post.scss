@@ -1,0 +1,61 @@
+.post-page{
+    padding: 25px 0;
+
+    .site-branding{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        padding: 0 37px;
+
+        img{
+            height: 30px;
+            width: 25px;
+        }
+
+        .title-page{
+            margin-left: 30px;
+
+            font-size: 22px;
+            line-height: 25px;
+            color: #343232;
+            font-weight: bold;
+
+            height: 35px;
+            border-radius: 7px;
+            background-color: #eff1f2;
+
+            width: 100%;
+            padding: 4px 25px;
+
+            .chapter-title{
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .content-block{
+       
+        padding: 60px 93px;
+
+        .block{
+            width: 50%;
+
+            .content{
+
+                font-size: 16px;
+                line-height: 22px;
+                color: #ffffff;
+            }
+
+            img{
+                margin: 15px 0;
+                width: 579px;
+                height: 217px;
+            }
+        }
+
+        
+    }
+}

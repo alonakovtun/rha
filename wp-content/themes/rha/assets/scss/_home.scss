@@ -120,8 +120,16 @@
 
                     margin-bottom: 9px;
 
+                    cursor: pointer;
+
                     &:last-child{
                         margin-bottom: 0;
+                    }
+
+                    &:hover{
+                        .chapter-title{
+                            color: #d40434;
+                        }
                     }
 
                     .chapter-title{
@@ -129,6 +137,12 @@
                         line-height: 25px;
                         color: #343232;
                         font-weight: 800;
+
+                        transition: all .3s ease-in-out;
+
+                        &:hover{
+                            color: #d40434;
+                        }
 
                         @include media-breakpoint-down(md) {
                             color: #d40434;
