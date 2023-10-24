@@ -18,13 +18,22 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script>
+		jQuery(window).on('load', function() {
+            jQuery('#loading').addClass('loaded')
+
+        })
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
+<div id="page-<?= $wp_query->post->ID; ?>" class="site" style="visibility:visible;">
 	
-
+	<div id="loading"></div>
 	<header id="masthead" class="site-header">
 		<!-- <div class="site-branding">
 			<?php

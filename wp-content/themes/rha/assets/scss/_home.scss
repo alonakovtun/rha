@@ -24,7 +24,7 @@
         justify-content: space-between;
 
         @include media-breakpoint-down(md) {
-            padding: 67px 40px;
+            padding: 50px 25px;
             height: auto;
         }
 
@@ -152,7 +152,7 @@
 
                     .chapter-subtitle{
                         font-size: 14px;
-                        line-height: 25px;
+                        line-height: 16px;
                         color: #343232;
                         margin-top: 6px;
 

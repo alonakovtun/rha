@@ -1,0 +1,77 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: October 19, 2023 9:19 pm
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.5.6
+WORDPRESS:	6.3.1
+PHP INFO:	8.1.23 | SAPI: apache2handler
+SERVER:		Apache/2.4.57 (Debian) 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (256M default) 
+MEMORY STACK: 6MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported
+TABLES: total:13 | filtered:0 | create:13
+FILTERED: []
+SQL CREATED: 20231019_rhavoidcrusade_59fb3bf6a93fc7d27005_20231019211911_database.sql
+SQL FILE SIZE: 1000.28KB (1024285)
+SQL FILE TIME: 2023-10-19 21:19:16
+SQL RUNTIME: 0.22 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  /var/www/html
+ARCHIVE FILE: 20231019_rhavoidcrusade_59fb3bf6a93fc7d27005_20231019211911_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	100.15MB
+STATS:	Dirs 553 | Files 4,640
+SQL ADDED: 20231019_rhavoidcrusade_59fb3bf6a93fc7d27005_20231019211911_database.sql
+ZipArchive Object
+(
+    [lastId] => 5192
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 5193
+    [filename] => /var/www/html/wp-content/backups-dup-lite/tmp/20231019_rhavoidcrusade_59fb3bf6a93fc7d27005_20231019211911_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 5192
+[PHP ERR][NOTICE] MSG:ob_flush(): Failed to flush buffer. No buffer to flush [CODE:8|FILE:/var/www/html/wp-content/plugins/duplicator/classes/utilities/class.u.php|LINE:173]
+do_action('wp_ajax_duplicator_package_build'), WP_Hook->do_action, WP_Hook->apply_filters, duplicator_package_build, DUP_Package->runZipBuild, DUP_Archive->build, DUP_Zip::create, DUP_Util::fcgiFlush, ob_flush, DUP_Handler::error, DUP_Handler::getMessage
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 42.94MB
+ARCHIVE RUNTIME: 16.27 sec.
+MEMORY STACK: 8MB
+building installer
+ARCHIVE CONSISTENCY TEST: PASS
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 1000.28KB
+INSTALLER FILE: 73.48KB
+ARCHIVE FILE: 44.8MB 
+EXPECTED FILE/DIRECTORY COUNT: 5,193
+ACTUAL FILE/DIRECTORY COUNT: 5,192
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 18.62 sec.
+PEAK PHP MEMORY USED: 10MB
+DONE PROCESSING => 20231019_rhavoidcrusade October 19, 2023 9:19 pm
+

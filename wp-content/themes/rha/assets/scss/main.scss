@@ -5,3 +5,23 @@
 @import 'footer';
 @import 'home';
 @import 'post';
+
+#loading {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+    background-color: #343233;
+    z-index: 9999999999999;
+    transition: all 0.5s;
+
+    &.loaded{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
