@@ -80,7 +80,7 @@
 
                 @include media-breakpoint-down(md) {
                     font-size: 20px;
-                    padding: 50px 25px;
+                    padding: 25px 25px 0;
                     line-height: 25px;
                 }
 
@@ -100,8 +100,8 @@
                             background-repeat: no-repeat;
     
                             @include media-breakpoint-down(md) {
-                                top: 50px;
-                                left: 5px;
+                                top: 3px;
+                                left: -19px;
                                 transform: translateY(0);
                                 width: 15px;
                                 height: 20px;
@@ -116,8 +116,6 @@
 
             img{
                 margin: 15px 0;
-                width: 579px;
-                height: 217px;
             }
         }
 

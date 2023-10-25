@@ -1,0 +1,95 @@
+.cookie-block{
+    height: auto;
+    width: 100%;
+    background-color: #d40434;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    padding: 0 37px 50px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.4s ease-in-out;
+
+    @include media-breakpoint-down(md) {
+        padding: 25px ;
+    }
+
+    .bookmark{
+        width: 42px;
+        height: 64px;
+
+        @include media-breakpoint-down(md) {
+            width: 32px;
+            height: 54px;
+        }
+    }
+
+    .cookie-text{
+        width: 65%;
+        padding-top: 20px;
+
+        font-size: 24px;
+        line-height: 30px;
+        color: #ffffff;
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        gap: 13px;
+        margin-top: 33px;
+
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+        }
+
+        .btn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 325px;
+            height: 55px;
+            border-radius: 7px;
+            background-color: #eff1f2;
+
+            @include media-breakpoint-down(md) {
+                align-items: flex-start;
+                padding-left: 15px;
+            }
+
+            .main-text{
+                font-size: 19px;
+                line-height: 16px;
+                color: #d40434;
+                font-weight: 800;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 16px;
+                    line-height: 13px;
+                }
+            }
+
+            .desc{
+                margin-top: 5px;
+                font-size: 15px;
+                line-height: 16px;
+                color: #343232;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 12px;
+                    line-height: 13px;
+                }
+
+            }
+        }
+    }
+}

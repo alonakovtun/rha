@@ -32,6 +32,8 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page-<?= $wp_query->post->ID; ?>" class="site" style="visibility:visible;">
+
+	<?= get_template_part('template-parts/coockie-block') ?>
 	
 	<div id="loading"></div>
 	<header id="masthead" class="site-header">

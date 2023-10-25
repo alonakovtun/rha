@@ -73,6 +73,13 @@ body {
         }
     }
 
+    &.cookies-banner-open{
+        .cookie-block{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
     
 
    
